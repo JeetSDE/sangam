@@ -239,7 +239,7 @@ const AlumniCard = ({ alumni, onConnect, onMessage, viewMode = 'grid' }) => {
       </div>
       {/* View Profile Link */}
       <div className="mt-3">
-        <Link to={`/alumni-directory/${id}`}>
+        <Link to={`/profile-page`}>
           <Button
             variant="ghost"
             size="sm"

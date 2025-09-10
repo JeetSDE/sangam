@@ -32,7 +32,7 @@ const Header = ({ user = null, notifications = [], onLogout = () => {} }) => {
     },
     {
       label: 'Profile',
-      path: '/profile',
+      path: '/profile-page',
       roles: ['admin', 'alumni', 'student'],
       icon: 'User'
     }
@@ -157,7 +157,7 @@ const Header = ({ user = null, notifications = [], onLogout = () => {} }) => {
                   {isUserMenuOpen && (
                     <div className="absolute right-0 mt-2 w-48 bg-popover border border-border rounded-md shadow-elevation-3 py-1 animate-slide-down">
                       <Link
-                        to="/profile"
+                        to="/profile-page"
                         className="flex items-center px-4 py-2 text-sm text-popover-foreground hover:bg-muted transition-colors duration-200"
                         onClick={() => setIsUserMenuOpen(false)}
                       >
